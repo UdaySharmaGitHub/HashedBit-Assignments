@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Divs</title>
+</head>
+<body>
+    <!-- Task Statement
+
+Write a JavaScript function createDiv(width, height, text) that creates and adds a new div element inside the #container div with the specified width and height. The div element should have text as its text content.
+
+Note: Do not modify the HTML code
+
+Note: width and height which are passed as arguments to the createDiv function do not contain the unit. Make sure to add the unit of "px" to it before setting the values -->
+
+<div id="container">
+
+</div>
+<script>
+    let container = document.getElementById('container')
+    function createDiv(width, height, text) {
+        let div = document.createElement('div');
+        div.style.width = width + 'px';
+        div.style.height = height + 'px';
+        div.textContent = text;
+        container.appendChild(div);
+    }
+    createDiv(100, 100, 'Hello World in JavaScript');
+    </script>
+</body>
+</html>

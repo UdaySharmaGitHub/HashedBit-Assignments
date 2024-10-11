@@ -1,0 +1,6 @@
+/*
+Q9) Write a function to count the number of words in a paragraph.
+ */
+let str = 'Wikipedia is a free content online encyclopedia written and maintained by a community of volunteers, known as Wikipedians, through open collaboration and the wiki software MediaWiki. Wikipedia is the largest and most read reference work in history, and is consistently ranked among the ten most visited websites; as of August 2024, it was ranked fourth by Semrush, and seventh by Similarweb. Founded by Jimmy Wales and Larry Sanger on January 15, 2001, Wikipedia has been hosted since 2003 by the Wikimedia Foundation, an American nonprofit organization funded mainly by donations from readers. Initially only available in English, editions of Wikipedia in more than 300 other languages have been developed. The English Wikipedia, with its almost 6.9 million articles, is the largest of the editions, which together comprise more than 63 million articles and attract more than 1.5 billion unique device visits and 13 million edits per month (about 5 edits per second on average) as of April 2024. In July 2024, over 25% of Wikipedias traffic was from the United States, followed by Japan at 6.2%, the United Kingdom at 5.8%, Russia at 5.2%, Germany at 5%, and the remaining 51% split among other countries.';
+let wordCount = str.split(' ').length;
+console.log(wordCount); // 195
